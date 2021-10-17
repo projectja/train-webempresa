@@ -74,7 +74,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'social.processors.ctx_dict',        
-                'pages.processors.ctx_dict_social' ,
+                'pages.processors.ctx_dict_pages' ,
             ],
         },
     },

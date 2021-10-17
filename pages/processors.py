@@ -4,7 +4,7 @@ def ctx_dict_pages(request):
     ctx_pages = {}
     pages =  Page.objects.all()
     for page in pages:
-        ctx_pages[page.title] = page.url
+        ctx_pages[page.title] = page.title
     return ctx_pages
         
 
