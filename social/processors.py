@@ -5,6 +5,6 @@ def ctx_dict(request):
     links= Link.objects.all()
     for link in links:
         ctx[link.key] = link.url
+        print(ctx)
     return ctx
-    
-
+  
