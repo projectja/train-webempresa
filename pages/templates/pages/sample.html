@@ -15,7 +15,13 @@
               <span class="section-heading-lower">{{page.title}}</span>
             </h2>
             <!-- linebreaks para mostrar saltos de lineas -->
-            <div class="section-content"> {{page.content|linebreaks}} </div>
+            <div class="section-content"> 
+              {{page.content|linebreaks}} 
+              {% if user.is_authenticated %}
+                <p><a href="{% url 'admin:pages_page_change' page.id %}">editar</p></a>
+              {% endif %}
+            </div>
+
           </div>
         </div>
       </div>
